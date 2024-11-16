@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonders Trip Planner - Booking Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333;">
+
+    <!-- Header Section -->
+    <header style="display: flex; justify-content: space-between; align-items: center; background-color: #009688; padding: 1em; color: white;">
+        <div class="logo" style="font-size: 1.5em; font-weight: bold;">Wonders Trip Planner</div>
+        <nav>
+            <ul style="list-style: none; margin: 0; padding: 0; display: flex;">
+                <li style="margin: 0 1em;"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Booking Section -->
+    <main style="padding: 2em;">
+
+        <!-- Step Progress Bar -->
+        <div class="progress-bar" style="display: flex; justify-content: space-around; margin-bottom: 1em;">
+            <div class="step" style="background-color: #009688; color: white; padding: 0.5em 1em; border-radius: 5px;">Booking Page</div>
+        </div>
+
+        
+        <section class="search-section" style="background-color: white; padding: 1.5em; margin-bottom: 1.5em; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
+            <h2 style="color: #009688;">Plan Your Trip</h2>
+            <form>
+                <label for="destination" style="font-weight: bold;">Destination:</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter destination" style="padding: 0.7em; border: 1px solid #ccc; border-radius: 5px; width: 100%; margin-bottom: 1em;">
+
+                <label for="checkin" style="font-weight: bold;">Check-in:</label>
+                <input type="date" id="checkin" name="checkin" style="padding: 0.7em; border: 1px solid #ccc; border-radius: 5px; width: 100%; margin-bottom: 1em;">
+
+                <label for="checkout" style="font-weight: bold;">Check-out:</label>
+                <input type="date" id="checkout" name="checkout" style="padding: 0.7em; border: 1px solid #ccc; border-radius: 5px; width: 100%; margin-bottom: 1em;">
+
+                <label for="travelers" style="font-weight: bold;">Travelers:</label>
+                <select id="travelers" name="travelers" style="padding: 0.7em; border: 1px solid #ccc; border-radius: 5px; width: 100%; margin-bottom: 1em;">
+                    <option value="1">person 1</option>
+                    <option value="2">person 2</option>
+                    <option value="3">person 3</option>
+                    <option value="4">person 4</option>
+                </select>
+
+                <button type="submit" style="padding: 0.7em 2em; background-color: #009688; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1em;"><a href="/index.html">Book Now</a></button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #009688; color: white; padding: 1em; text-align: center;">
+        <p>Email: support@wonderstrip.com | Phone: +123-456-7890</p>
+        <p>Follow us: <a href="https://www.Facebook.com" style="color: white; text-decoration: none;">Facebook</a> | <a href="https://www.instagram.com" style="color: white; text-decoration: none;">Instagram</a> </p>
+    </footer>
+
+</body>
+</html>

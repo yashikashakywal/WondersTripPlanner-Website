@@ -1,0 +1,259 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #333;
+    color: #fff;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .navbar a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.header .navbar a:hover {
+    color: #009de6;
+}
+
+.header .icons {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.header .icons .fas {
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('image/home.jpg') no-repeat center center/cover;
+    position: relative;
+    padding-top: 80px;
+    background-size: cover; 
+    background-position: center;
+    padding: 2rem 9%;
+}
+
+.home .content {
+    text-align: center;
+    background: none;
+    color: #0a0909;
+    background: transparent !important;
+}
+
+.home .content span {
+    font-size: 22px;
+    color: #000000;
+    background: none;
+}
+
+.home .content h3 {
+    font-size: 48px;
+    margin: 20px 0;
+    background: none;
+}
+
+.home .btn {
+    padding: 10px 20px;
+    background: #2769b4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Packages Section */
+.packages {
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: #043442;
+    background: #e0fbff;
+    text-align: center;
+    display: grid;
+}
+
+.packages .heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000000;
+    /* overflow: hidden; */
+}
+
+.packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items in a row */
+    gap: 1.5rem; /* Spacing between the items */
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .packages .box-container {
+        grid-template-columns: 1fr; /* Switch to vertical layout on smaller screens */
+    }
+}
+
+
+
+
+.packages .box {
+    background: #f3fcff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.packages .box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.packages .box .content {
+    padding: 15px;
+    overflow: hidden;
+}
+
+.packages .box .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.packages .box .content p {
+    font-size: 14px;
+    color: #666;
+    overflow: hidden;
+}
+
+.packages .box .btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 12px;
+    background: #0a77cf;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#contact .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contact .form-group input,
+#contact .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact .btn {
+    padding: 10px 20px;
+    background: #0d3dda;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#contact .btn a{
+    color: white;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer .box h3 {
+    margin-bottom: 15px;
+}
+
+.footer .box a {
+    display: block;
+    color: #ccc;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer .credit {
+    margin-top: 20px;
+    color: #ccc;
+}
